@@ -15,32 +15,34 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "./variables.scss";
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #313131;
-  border-bottom: 5px solid #ffce00;
-}
+  background-color: $headline;
+  border-bottom: 5px solid $button;
 
-header h1 {
-  color: #eee;
-  font-size: 28px;
-}
+  h1 {
+    color: $background;
+    font-size: 28px;
+  }
 
-header .total-income {
-  font-family: "Fira Code", "Fira Sans", sans-serif;
-  background-color: #ffce00;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 900;
-  padding: 5px 10px;
-  min-width: 100px;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
-  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  .total-income {
+    font-family: "Fira Code", "Fira Sans", sans-serif;
+    background-color: $button;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  }
 }
 </style>

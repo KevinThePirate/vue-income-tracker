@@ -68,7 +68,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "./components/variables.scss";
 * {
   margin: 0;
   padding: 0;
@@ -76,6 +77,6 @@ export default {
   font-family: "Fira Code", "Fira Sans", sans-serif;
 }
 body {
-  background: white;
+  background: $background;
 }
 </style>
